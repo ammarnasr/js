@@ -4,17 +4,23 @@ $(document).ready(function(){
     var controller = new ScrollMagic.Controller();
 
     //build a scene to play the animation in
-    var ourScene = new ScrollMagic.Scene({
-        triggerElement : '#project01'
-    })
-    .setClassToggle('#project01' , 'fade-in')// add class .fade-in to element with id #project01
-    .addIndicators({
-        name : 'fade project01 scene',
-        colorTrigger : 'black',
-        indent : 200 , 
-        colorStart : '#756C695'
-    })// from the add indicator pligin
-    .addTo(controller)
+    // loop through each element with class .project
+    $('.project').each(function(){
+        var ourScene = new ScrollMagic.Scene({
+            triggerElement : this.children[0] ,
+            triggerHook : 0.9
+        })
+        .setClassToggle (this , 'fade-in')
+        .addIndicators({
+            name : this,
+            colorTrigger : 'black',
+            colorStart : ' yellow',
+            colorEnd : 'pink'
+        })
+        .addTo(controller)
+    });
+
+
 
 });
 
