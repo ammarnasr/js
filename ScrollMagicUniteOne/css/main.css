@@ -87,6 +87,12 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+#main {
+    position: relative;
+    background-color: #fff;
+}
+
 .project {
     text-align: center;
     padding: 200px 0;
