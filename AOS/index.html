@@ -5,6 +5,7 @@
         <meta name="viewport" content="width= device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatiable" content="ie=edge">
         <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link rel="stylesheet" href="style.css">
         <title>3D of Time</title>  
     </head>
@@ -16,7 +17,7 @@
 
         <main class="container">
 
-            <section class="card">
+            <section class="card" data-aos="fade-right">
                 <img src="images/Alarm-Clock.jpg" alt="">
                 <div>
                     <h3>Time</h3>
@@ -27,7 +28,7 @@
                 </div>
             </section>
             
-            <section class="card">
+            <section class="card" data-aos="fade-left">
                 <img src="images/Sudan_Independence.png" alt="">
                 <div>
                     <h3>Sudan_Independence</h3>
@@ -38,7 +39,7 @@
                 </div>
             </section>
             
-            <section class="card">
+            <section class="card" data-aos="fade-right">
                 <img src="images/1989-coup.jpg" alt="">
                 <div>
                     <h3>1989-coup</h3>
@@ -49,7 +50,7 @@
                 </div>
             </section>
             
-            <section class="card">
+            <section class="card" data-aos="fade-left">
                 <img src="images/Giada.jpg" alt="">
                 <div>
                     <h3>Giada</h3>
@@ -61,5 +62,14 @@
             </section>
             
         </main>
+
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                offset : 400,
+                duration : 1000
+            });
+        </script>
+
     </body>
 </html>
