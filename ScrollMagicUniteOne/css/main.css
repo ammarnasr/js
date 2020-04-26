@@ -103,7 +103,7 @@ body {
 }
 
 .bcg {
-    background-image: url('../img/img_background.jpg') no-repeat;
+    background: url('../img/img_background.jpg') no-repeat;
     background-size: cover;
     position: absolute;
     width: 100%;
